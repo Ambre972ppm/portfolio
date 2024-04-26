@@ -8,12 +8,12 @@
 
 ::-moz-selection { /* Code for Firefox */
   color: #fff;
-  background: #008ED6;
+  background: #BF9000;
 }
 
 ::selection {
   color: #fff;
-  background: #008ED6;
+  background: #BF9000;
 }
 
 html {
@@ -32,7 +32,7 @@ body {
 }
 
 h2 span {
-  color: #008ED6;
+  color: #BF9000;
 }
 
 .animated {
@@ -70,11 +70,11 @@ h2 span {
 a, a:active, a:hover, a:focus{
   outline: 0;
   text-decoration: none;
-  color: #00B2FF;
+  color: #806000;
 }
 
 a {
-  color: #008ED6;
+  color: #BF9000;
 }
 
 .container-fluid {
@@ -146,6 +146,16 @@ a {
   background-position: top center;
 }
 
+.pageload-overlay {
+  transition: all 1s ease-in-out; /* Pour rendre la transition plus fluide */
+}
+
+.pageload-overlay svg {
+  opacity: 1;
+  transition: opacity 1s ease-in-out; /* Transition douce sur l'opacité */
+}
+
+
 @media(min-width: 768px){
   .pageload-overlay::before {
     margin-top: 0;
@@ -176,7 +186,7 @@ a {
 }
 
 .navbar-fixed-top .navbar-nav > li > a:hover {
-  color: #008ED6;
+  color: #BF9000;
 }
 
 .navbar-fixed-top .navbar-brand {
@@ -189,7 +199,7 @@ a {
 }
 
 .navbar-fixed-top .navbar-nav > li > a:hover {
-  color: #008ED6;
+  color: #BF9000;
 }
 
 .navbar-fixed-top .navbar-toggle {
@@ -207,7 +217,7 @@ a {
 
 .navbar-fixed-top .navbar-toggle:hover,
 .navbar-fixed-top .navbar-toggle:focus {
-  background-color: #008ED6;
+  background-color: #BF9000;
 }
 
 @media (min-width:768px) {
@@ -279,9 +289,10 @@ a {
     position: relative;
     z-index: 97;
     display: block;
-    padding: 16px 10px;
-    border: 0px solid #008ED6;
-    background: #008ED6;
+    padding: 10px 10px;
+    border: 0px solid #BF9000;
+    border-radius: 5px;
+    background: #BF9000;
     -webkit-transition: border-width 0.3s 0.15s;
     transition: border-width 0.3s 0.15s;
 }
@@ -290,7 +301,7 @@ a {
     fill: #fff;
 }
 
-.nav-slide div {
+/* .nav-slide div {
     position: absolute;
     top: 50%;
     padding: 20px;
@@ -300,7 +311,7 @@ a {
     opacity: 0;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
     transition: transform 0.3s, opacity 0.3s;
-}
+} */
 
 .nav-slide a.prev div {
     left: 0;
@@ -339,7 +350,7 @@ a {
 }
 
 .nav-slide div p {
-    color: #008ED6;
+    color: #BF9000;
     font-family: "Lucida Bright",Georgia,serif;
     font-size: 75%;
     font-style: italic;
@@ -439,7 +450,7 @@ a {
 }
 
 .header-slide .image-slide a:hover {
-  color: #008ED6 !important;
+  color: #BF9000 !important;
 }
 
 .header-slide .image-slide .slider-content {
@@ -528,12 +539,12 @@ header.title h2 {
 }
 
 .light h2 span {
-  color: #008ED6;
+  color: #BF9000;
 }
 
 .dark strong,
 .dark h2 span{
-  color: #2187E7;
+  color: #BF9000;
 }
 
 .separator {
@@ -544,7 +555,7 @@ header.title h2 {
 .separator.blue {
   padding-top: 60px !important;
   padding-bottom: 60px !important;
-  background-color: #008ED6;
+  background-color: #BF9000;
 }
 
 .separator.blue h2 span {
@@ -711,7 +722,7 @@ span.quot-name:before {
 .percentage {
     height: 5px;
     margin: 2px 1px;
-    background: #2187e7;
+    background: #BF9000;
     position: absolute;
     box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.4);
 }
@@ -732,7 +743,7 @@ span.quot-name:before {
 }
 
 .percentage:after {
-  border-top: 4px solid #008ED6;
+  border-top: 4px solid #BF9000;
   border-left: 4px solid rgba(0,0,0,0);
   border-right: 4px solid rgba(0,0,0,0);  
 }
@@ -818,7 +829,7 @@ span.quot-name:before {
 }
 
 .social-list li a:hover {
-  color: #008ED6
+  color: #BF9000
 }
 
 
@@ -890,7 +901,7 @@ span.quot-name:before {
 }
 
 #filters > li.active {
-  color: #008ED6;
+  color: #BF9000;
   font-weight: 700;
 }
 
@@ -923,18 +934,18 @@ span.quot-name:before {
   width: calc(100% + 10px);
   height: 100%;
   opacity: .8;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-30px,0,0) scale(1.12);
-  transform: translate3d(-30px,0,0) scale(1.12);
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-transform: translate(-10px,0,0) scale(1.12);
+  transform: translate(-10px,0,0) scale(1.12);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .container-portfolio .portfolio-view:hover img {
   opacity: 0.5;
-  -webkit-transform: translate3d(0,0,0) scale(1);
-  transform: translate3d(0,0,0) scale(1);
+  -webkit-transform: translate3d(0,0,0) scale(0.5);
+  transform: translate3d(0,0,0) scale(0.5);
 }
 
 .container-portfolio .portfolio-view figcaption,
@@ -985,10 +996,10 @@ span.quot-name:before {
   border-right: 1px solid #FFF;
   text-align: right;
   opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-40px,0,0);
-  transform: translate3d(-40px,0,0);
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
 }
 
 .container-portfolio .portfolio-view:hover p {
@@ -1024,7 +1035,7 @@ span.quot-name:before {
 }
 
 .form-control:focus {
-  border-color: #008ED6;
+  border-color: #BF9000;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(0, 142, 214, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(0, 142, 214, 0.6);
@@ -1056,7 +1067,7 @@ textarea.form-control {
   left: 0;
   top: 0;
   height: 100%;
-  background-color: #008ED6;
+  background-color: #BF9000;
   width: 0;
   z-index: -1;
   transition: all .3s;
@@ -1073,7 +1084,7 @@ address span {
 }
 
 address span .fa {
-  color: #008ED6;
+  color: #BF9000;
   margin-right: 10px;
 }
 
@@ -1109,7 +1120,7 @@ address span a {
 }
 
 .btn-map:hover {
-  color: #008ED6;
+  color: #BF9000;
 }
 
 #google_map {
@@ -1143,5 +1154,5 @@ address span a {
 }
 
 #footer .fa {
-  color: #008ED6;
+  color: #BF9000;
 }
